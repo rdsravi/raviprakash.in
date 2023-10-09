@@ -336,6 +336,17 @@ span{
     cursor: pointer;
 }
 
+.alert {
+    width: 100%;
+    background: rgb(3, 171, 73);
+    padding: 1rem 2rem;
+    border-radius: 8rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 900;
+    display: none;
+}
+
 
 /* Footer CSS by RAVI */
 
