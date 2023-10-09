@@ -57,3 +57,59 @@ ScrollReveal({
     backDelay: 1000,
     loop: true
  });
+
+
+
+/*============================ Firebase JQuery ============================*/
+ const firebaseConfig = {
+    apiKey: "AIzaSyD4bpYPgp4O4XunO5-dshy4S8fHXtUgABk",
+    authDomain: "raviprakash-7b08f.firebaseapp.com",
+    databaseURL: "https://raviprakash-7b08f-default-rtdb.firebaseio.com",
+    projectId: "raviprakash-7b08f",
+    storageBucket: "raviprakash-7b08f.appspot.com",
+    messagingSenderId: "438454313648",
+    appId: "1:438454313648:web:b930970d593ed64bef1175",
+    measurementId: "G-YRPD6TY5MS"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+// reference database
+var contactDB = firebase.database().ref('contact');
+
+$('#contact').submit(function (e) {
+    e.preventDefault();
+
+    var name = getElementVal("name");
+    var email = getElementVal("email");
+    var number = getElementVal("number");
+    var subject = getElementVal("subject");
+    var message = getElementVal("message");
+
+    saveMessages(name, email, number, subject, message);
+
+    $('.alert').show();
+
+    setTimeout(function () {
+        $('.alert').hide();
+    }, 3000);
+
+    $('#contact')[0].reset();
+});
+
+const saveMessages = (name, email, number, subject, message) => {
+    var newContactForm = contactDB.push();
+
+    newContactForm.set({
+        name: name,
+        email: email,
+        number: number,
+        subject: subject,
+        message: message,
+    });
+};
+
+const getElementVal = (id) => {
+    return $('#' + id).val();
+};
