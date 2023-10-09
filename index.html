@@ -12,6 +12,15 @@
 
     <!-- Custom css -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+
+
 </head>
 
 <body>
@@ -25,7 +34,7 @@
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#portfolio">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -48,11 +57,13 @@
                 <a href="https://www.linkedin.com/in/ravi-prakash-rds/"><i class='bx bxl-linkedin'></i></a>
                 <a href="https://github.com/rdsravi"><i class='bx bxl-github'></i></a>
             </div>
-            <a href="https://firebasestorage.googleapis.com/v0/b/my-portfolio-cb183.appspot.com/o/RAVI%20Prakash%20new%20Resume.pdf?alt=media&token=9d85060d-8d16-4d93-be51-bf18561dff4d" class="btn">Download CV</a>
+            <a href="https://firebasestorage.googleapis.com/v0/b/raviprakash-7b08f.appspot.com/o/Ravi%20Prakash%20Resume.pdf?alt=media&token=a09de05c-7553-4880-be54-a4e546aff056"
+                class="btn">Download CV</a>
         </div>
 
         <div class="home-img">
-            <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-cb183.appspot.com/o/Ravi1.png?alt=media&token=a1968eda-818e-4b58-ab27-621455181933">
+            <img
+                src="https://firebasestorage.googleapis.com/v0/b/raviprakash-7b08f.appspot.com/o/Ravi1.png?alt=media&token=50c4556f-3f04-4988-a7b3-ba954d82eaf9">
         </div>
     </section>
 
@@ -60,7 +71,8 @@
 
     <section class="about" id="about">
         <div class="about-img">
-            <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-cb183.appspot.com/o/Ravi_full1.png?alt=media&token=f2940f6c-63a8-455b-a79a-9e0bb8ae2279">
+            <img
+                src="https://firebasestorage.googleapis.com/v0/b/raviprakash-7b08f.appspot.com/o/Ravi_full1.png?alt=media&token=8a279d74-98dc-44c6-9e48-5c84eede43a9">
         </div>
         <div class="about-content">
             <h class="heading">About <span>Me</span></h>
@@ -80,6 +92,8 @@
                 policymakers who need to understand and communicate data-driven insights
                 to a broader audience.</p>
             <a href="resume.html" class="btn">Read More</a>
+            <a href="Gallery/gallery.html" class="btn" style="margin-left: 2rem;">Gallery 1</a>
+            <a href="Gallery2/gallery2.html" class="btn" style="margin-left: 2rem;">Gallery 2</a>
         </div>
     </section>
 
@@ -116,9 +130,10 @@
                 <a href="android_service.html" class="btn">Read more</a>
             </div>
             <div class="service-box">
-                <i class='bx bxl-netlify' ></i>
+                <i class='bx bxl-netlify'></i>
                 <h3>Software Testing</h3>
-                <p>I understand the critical importance of ensuring the quality, functionality, and security of software
+                <p>I understand the critical importance of ensuring the quality, functionality, database, and security
+                    of software
                     applications. With my expertise in software testing, I am confident in my ability to deliver
                     comprehensive testing solutions tailored to your unique requirements.</p>
                 <a href="sw_testing_service.html" class="btn">Read more</a>
@@ -150,56 +165,63 @@
         <h2 class="heading">Letest <span>Project</span></h2>
         <div class="portfolio-container">
             <div class="portfolio-box">
-                <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-cb183.appspot.com/o/project7.jpg?alt=media&token=cc67cd65-4c99-4aab-a56d-4425d5f26024" alt="">
+                <img src="https://firebasestorage.googleapis.com/v0/b/raviprakash-7b08f.appspot.com/o/Project%2Fproject7.jpg?alt=media&token=37a2a4e9-1bdf-4b39-a0fe-8ca6447363d2"
+                    alt="">
                 <div class="portfolio-layer">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam placeat natus laudantium
-                        nesciunt. Animi, dolor laboriosam. Vel, doloremque.</p>
+                    <h4>Personal Portfolio</h4>
+                    <p>It's one of the most practical and memorable ways to share my work with press, potential
+                        collaborators or employers.</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-cb183.appspot.com/o/project6.jpg?alt=media&token=07919517-ade0-4004-b2f3-df93faa8d66d" alt="">
+                <img src="https://firebasestorage.googleapis.com/v0/b/raviprakash-7b08f.appspot.com/o/Project%2Fproject8.png?alt=media&token=742274c5-b801-4216-b368-3d86c4b1faa7"
+                    alt="">
                 <div class="portfolio-layer">
-                    <h4>Lajeejy App</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam placeat natus laudantium
-                        nesciunt. Animi, dolor laboriosam. Vel, doloremque.</p>
+                    <h4>Food Delivery App</h4>
+                    <p>Food delivery apps are third-party delivery services hosted on mobile applications that
+                        restaurants or retailers partner with to showcase their menu and food offerings, allowing
+                        customers to order food and get it delivered to their doorstep.</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-cb183.appspot.com/o/project5.jpg?alt=media&token=d90a159c-32cd-47cc-a52f-bf5149b5b621" alt="">
+                <img src="https://firebasestorage.googleapis.com/v0/b/raviprakash-7b08f.appspot.com/o/Project%2Fproject5.jpg?alt=media&token=1a9c9440-ade6-4197-9f93-60d3e157f47d"
+                    alt="">
                 <div class="portfolio-layer">
                     <h4>Hmm-Hmm Chating App</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam placeat natus laudantium
-                        nesciunt. Animi, dolor laboriosam. Vel, doloremque.</p>
+                    <p>It enables you to send and receive messages. This app make it easier, simpler, and faster to
+                        connect with everyone and it is also easy to use.</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-cb183.appspot.com/o/project4.jpg?alt=media&token=7ef87d78-4abe-42c4-88bc-27da24511252" alt="">
+                <img src="https://firebasestorage.googleapis.com/v0/b/raviprakash-7b08f.appspot.com/o/Project%2Fproject6.jpg?alt=media&token=950e8799-9a56-47c3-8024-393226d45411"
+                    alt="">
                 <div class="portfolio-layer">
-                    <h4>Portfolio Website</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam placeat natus laudantium
-                        nesciunt. Animi, dolor laboriosam. Vel, doloremque.</p>
+                    <h4>E-Commerce website</h4>
+                    <p>This Website allows startups, small businesses, and large companies to sell products at scale and
+                        reach customers across the world.</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-cb183.appspot.com/o/project3.png?alt=media&token=755cfd7f-81f4-4e00-8f25-683d3eb3853c" alt="">
+                <img src="https://firebasestorage.googleapis.com/v0/b/raviprakash-7b08f.appspot.com/o/Project%2Fproject3.png?alt=media&token=7c43a973-160f-4060-af5e-fcab0be31141"
+                    alt="">
                 <div class="portfolio-layer">
                     <h4>eBook Store App</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam placeat natus laudantium
-                        nesciunt. Animi, dolor laboriosam. Vel, doloremque.</p>
+                    <p>This eBook store mobile app is simply an online bookstore from where one can download eBooks into
+                        eBook readers.</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
-                <img src="https://firebasestorage.googleapis.com/v0/b/my-portfolio-cb183.appspot.com/o/project2.jpg?alt=media&token=7283f5e2-9483-4264-8d34-51749f5154b3" alt="">
+                <img src="https://firebasestorage.googleapis.com/v0/b/raviprakash-7b08f.appspot.com/o/Project%2Fproject2.jpg?alt=media&token=1497d68b-d1df-4a7d-8a6b-3e3c920df64b"
+                    alt="">
                 <div class="portfolio-layer">
                     <h4>Restaurent Management System</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam placeat natus laudantium
-                        nesciunt. Animi, dolor laboriosam. Vel, doloremque.</p>
+                    <p>It is a type of point-of-sale (POS) software specifically designed for restaurants, bars, food
+                        trucks and others in the foodservice industry.</p>
                     <a href="#"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
@@ -207,20 +229,27 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me!</span></h2>
+    <section class="contact">
+        <form id="contact">
+            <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
+            <div class="alert">Message sent successfully!</div>
+
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email">
+                <input type="text" id="name" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email" required>
             </div>
+
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="taxt" placeholder="Email Subject">
+                <input type="tel" id="number" placeholder="Phone Number">
+                <input type="text" id="subject" placeholder="Subject">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Massege"></textarea>
-            <input type="submit" value="Send Massege" class="btn">
+
+            <div class="input-box">
+                <textarea id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+
         </form>
     </section>
 
@@ -236,33 +265,11 @@
     </footer>
 
 
-    <!-- Firebase -->
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-          apiKey: "AIzaSyBIjn1ucF6be7rpUK8WBtmmq0YE7KhPDMc",
-          authDomain: "my-portfolio-cb183.firebaseapp.com",
-          projectId: "my-portfolio-cb183",
-          storageBucket: "my-portfolio-cb183.appspot.com",
-          messagingSenderId: "833788404242",
-          appId: "1:833788404242:web:c73c33676952185c726ecb",
-          measurementId: "G-D9KGFXRS5T"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-    </script>
-
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Firebase -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
 
     <!-- Typed JS -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
