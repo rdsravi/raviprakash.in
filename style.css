@@ -378,7 +378,11 @@ span{
     color: var(--second-bg-color);
 }
 
+
+
+
 /*BREAK-POINTS*/
+
 @media(max-width: 1200px){
     html{
         font-size: 55%;
@@ -453,7 +457,7 @@ span{
         flex-direction: column-reverse;
     }*/
     .about-img img {
-        width: 33vw;
+        width: 93vw;
         margin-top: 1rem;
     }
     
@@ -473,6 +477,9 @@ span{
     .portfolio-container{
         grid-template-columns: 1fr;
     }
+    .home-img img {
+        width: 95vw;
+    }
 }
 
 @media(max-width: 450px) {
@@ -483,11 +490,17 @@ span{
     .contact form .input-box input {
         width: 100%;
     }
+    .home-img img {
+        width: 105vw;
+    }
+    .about-img img {
+        width: 40vw;
+    }
 }
 
 @media(max-width: 365px) {
     .home-img img {
-        width: 90vw;
+        width: 105vw;
     }
     .about-img img {
         width: 40vw;
@@ -501,5 +514,8 @@ span{
     .footer p {
         text-align: center;
         margin-top: 2rem;
+    }
+    .about-img img {
+        width: 20vw;
     }
 }
