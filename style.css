@@ -500,7 +500,7 @@ span{
 
 @media(max-width: 365px) {
     .home-img img {
-        width: 95vw;
+        width: 75vw;
     }
     .about-img img {
         width: 40vw;
