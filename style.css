@@ -478,7 +478,7 @@ span{
         grid-template-columns: 1fr;
     }
     .home-img img {
-        width: 95vw;
+        width: 75vw;
     }
 }
 
@@ -491,7 +491,7 @@ span{
         width: 100%;
     }
     .home-img img {
-        width: 105vw;
+        width: 95vw;
     }
     .about-img img {
         width: 40vw;
@@ -500,7 +500,7 @@ span{
 
 @media(max-width: 365px) {
     .home-img img {
-        width: 105vw;
+        width: 95vw;
     }
     .about-img img {
         width: 40vw;
