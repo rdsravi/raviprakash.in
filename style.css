@@ -86,7 +86,7 @@ section {
 
 .home-img img{
     height: 30vw;
-    width: 38vw;
+    width: 30vw;
     margin-top: 15vw;
     animation: floatImage 4s ease-in-out infinite;
 }
